@@ -126,7 +126,8 @@ body{
 }*/
 .containerLinks-item{
 	margin: 10px 20px;
-	margin-left: 0; 
+	margin-left: 0;
+	color:#fff;
 }
 @media(max-width: 640px){
 	.containerLinks-item{

@@ -7,9 +7,17 @@ body{
 	width: 100%;
 	min-height: 100vh;
 	background: 
+		url("assets/Logomarca dourada.png") no-repeat 95% 65%,
+		url("https://source.unsplash.com/1600x900/?gospel") no-repeat center center fixed;
+	background-size: 20%, cover;
+}
+@media(max-width: 640px){
+	body{
+		background: 
 		url("assets/Logomarca dourada.png") no-repeat 1% 2%,
 		url("https://source.unsplash.com/1600x900/?gospel") no-repeat center center fixed;
-	background-size: 10%, cover;
+	background-size: 10%, cover;		
+	}
 }
 .container{
 	width: 40%;
@@ -23,7 +31,8 @@ body{
 @media(max-width: 640px){
 	.container{
 		width: 90%;
-		/*min-height: 50vh;*/
+		margin: 0 auto;
+		margin-top: 8%;
 	}
 }
 .container-titulo{
@@ -85,21 +94,25 @@ body{
 .containerLinks-btn{
 	width: 80px;
 	height: 30px;
-	margin-right: 10px;
+	margin-right: 20px;
 	border: none;
 	border-radius: 3px;
 }
 @media(max-width: 640px){
 	.containerLinks-btn{
-		width: 90%;
+		width: 98%;
 		height: 45px;
+		margin: 0 auto; 
 		border-radius: 5px;
 	}
+}
+.containerLinks-btn:hover{
+	background-color: yellow;
 }
 .containerLinks-btn:focus{
 	outline: none;
 }
-.containerLinks-item{
+/*.containerLinks-item{
 	width: 40px;
 	height: 40px;
 	margin: 10px 20px;
@@ -112,13 +125,19 @@ body{
 	justify-content: center;
 	align-items: center;
 
+}*/
+.containerLinks-item{
+	margin: 10px 20px;
+	margin-left: 0; 
 }
 @media(max-width: 640px){
 	.containerLinks-item{
-		margin-right: 10px;
-		width: 25%;
+		margin: 30px auto;
 		padding-bottom: 25%;
 	}
+}
+.containerLinks-item:hover{
+	color:yellow;
 }
 .containerLinksItem-icon{
 	width: 105%;
